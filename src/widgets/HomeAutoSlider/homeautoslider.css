@@ -1,0 +1,29 @@
+.slider-body {
+  background-color: var(--color-white);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+.home-slider-text {
+  color: var(--color-light-black);
+  font-size: var(--font-size-12);
+  margin-top: 10px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.home-slider-title,
+.card-title {
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-600);
+  color: var(--color-pure-black);
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.auto-slider-read-more {
+  color: var(--color-light-black);
+}

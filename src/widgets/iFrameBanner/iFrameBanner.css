@@ -1,0 +1,66 @@
+.iframe-sec-text {
+  color: var(--color-light-black);
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+.rgc-map {
+  width: 100%;
+  height: 100%;
+}
+
+.iframe-card {
+  position: absolute;
+  top: 2rem;
+  left: 5rem;
+  background-color: white;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .iframe-card {
+    width: 60%;
+    height: 16rem;
+    padding: 0.75rem;
+    top: 5rem;
+    bottom: 1rem;
+    left: 1.6rem;
+  }
+
+  .iframe-card div h3 {
+    font-size: var(--font-size-24) !important;
+  }
+
+  .iframe-card p {
+    font-size: 0.875rem;
+  }
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  .map-container {
+    height: 450px;
+  }
+  .iframe-card {
+    width: 19rem;
+    height: 13rem;
+    padding: 0.5rem;
+
+    top: auto;
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  .iframe-card div h3 {
+    font-size: var(--font-size-24) !important;
+  }
+
+  .iframe-card p {
+    font-size: 0.75rem;
+  }
+}

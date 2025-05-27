@@ -1,0 +1,32 @@
+.news-sm-box {
+  color: var(--color-royal-purple);
+  display: inline-block;
+  background-color: var(--color-royal-purple-10-opacity);
+}
+.news-card {
+  background-color: var(--color-neutral-light-gray);
+}
+.desc-text {
+  color: var(--color-grayish-purple);
+}
+.news-event-bg {
+  background-image: url("../../../assets/newseventbg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 65vh;
+}
+.card-on-bg {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: auto;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .card-on-bg {
+    width: 70% !important;
+  }
+}

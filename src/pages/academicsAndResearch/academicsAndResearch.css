@@ -1,0 +1,67 @@
+.admission-img-1 {
+  width: 338px;
+  height: 439px;
+}
+.admission-img-2 {
+  width: 245px;
+  height: 217px;
+  bottom: 15%;
+  left: 22%;
+}
+
+.arrow-icon-bg {
+  background-color: var(--color-pastel-pink);
+}
+
+.arrow-icon-color {
+  color: var(--color-deep-purple-black);
+}
+
+.admission-card:hover {
+  background-image: url("../../assets/admission-process.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--color-white);
+}
+.acceptance-card:hover {
+  background-image: url("../../assets/acceptance.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--color-white);
+}
+.course-register-card:hover {
+  background-image: url("../../assets/course-register.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--color-white);
+}
+
+.admission-process-bg {
+  background-color: var(--color-off-white-gray);
+}
+
+.scholarship-card-bg {
+  background-color: var(--color-pale-pink);
+}
+
+.placement-card {
+  min-width: 222px;
+}
+
+.placement-card-body {
+  background-color: var(--color-vibrant-red);
+}
+
+.placement-btn {
+  background-color: var(--color-teal-green) !important;
+}
+
+.placement-btn:hover {
+  background-color: var(--color-teal-on-hover) !important;
+}
+.placement-btn:active {
+  background-color: var(--color-teal-green) !important;
+}

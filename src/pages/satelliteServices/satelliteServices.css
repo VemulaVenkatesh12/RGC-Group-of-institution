@@ -1,0 +1,7 @@
+.text-gray {
+  color: var(--color-charcoal-gray);
+}
+
+.satellite-services-bg {
+  background-color: var(--color-pale-pink) !important;
+}

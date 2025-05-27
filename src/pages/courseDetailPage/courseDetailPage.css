@@ -1,0 +1,31 @@
+.course-details-tab-btn:hover {
+  background-color: var(--color-pure-black) !important;
+  color: var(--color-white) !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.course-details-tab-btn {
+  color: var(--color-charcoal-gray);
+  min-width: 210px !important;
+  height: 50px !important;
+  border: none !important;
+  outline: none !important;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-400);
+}
+
+.course-details-tab-btn.active {
+  background-color: var(--color-pure-black) !important;
+  color: var(--color-white) !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.course-detail-bg {
+  background-color: var(--color-pale-pink);
+}
+
+.course-tab-text {
+  color: var(--color-charcoal-gray);
+}

@@ -1,0 +1,44 @@
+.card-banner-bg {
+  background-color: var(--color-aqua-teal);
+}
+
+.gallery-tab-btn {
+  width: 213px;
+  height: 50px;
+  border: none !important;
+  outline: none !important;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-500);
+}
+
+.gallery-tab-btn:hover {
+  background-color: var(--color-peachy-orange) !important;
+  color: var(--color-pure-black) !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.gallery-tab-btn.active {
+  background-color: var(--color-peachy-orange) !important;
+  color: var(--color-pure-black) !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.image-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-box img {
+  max-width: 100% !important;
+  transition: all 0.3s;
+  display: block;
+  width: 100% !important;
+  height: auto;
+  transform: scale(1);
+}
+
+.image-box:hover img {
+  transform: scale(1.1);
+}

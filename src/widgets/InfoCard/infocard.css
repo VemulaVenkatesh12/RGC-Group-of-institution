@@ -1,0 +1,27 @@
+.infocard {
+  background-color: var(--color-neutral-light-gray);
+  width: 100%;
+  border: none;
+  
+}
+.info-sm-box {
+  color: var(--color-teal-green);
+  display: inline-block;
+  background-color: var(--color-teal-green-10-opacity);
+}
+.info-card-button {
+  color: var(--color-white) !important;
+  background-color: var(--color-deep-red) !important;
+}
+
+.info-view-details-btn {
+  background-color: var(--color-light-black) !important;
+}
+.info-view-details-btn:hover {
+  background-color: #514b4b !important;
+}
+
+.read-more-link {
+  color: var(--color-light-black) !important;
+}
+

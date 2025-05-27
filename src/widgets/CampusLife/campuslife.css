@@ -1,0 +1,49 @@
+.campus-bg {
+  background-image: url("../../assets/campusLife-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.campus-btn-1 {
+  color: var(--color-light-black) !important;
+  font-weight: var(--font-weight-600);
+  text-transform: uppercase;
+  background-color: var(--color-white) !important;
+}
+.campus-btn-1:hover {
+  background-color: #e6e6e6 !important;
+  color: var(--color-light-black) !important;
+}
+.campus-btn-1:active {
+  background-color: var(--color-white) !important;
+}
+
+.campus-btn-2 {
+  color: var(--color-white) !important;
+  font-weight: var(--font-weight-600);
+  text-transform: uppercase;
+  background-color: var(--color-deep-red) !important;
+}
+.campus-btn-2:hover {
+  color: var(--color-white);
+  background-color: #b10600 !important;
+}
+.campus-btn-2:active {
+  color: var(--color-white) !important;
+  background-color: var(--color-deep-red) !important;
+}
+
+.campus-primary-text {
+  font-weight: var(--font-weight-600) !important;
+  font-size: var(--font-size-18) !important;
+}
+.campus-secondary-text {
+  font-weight: var(--font-weight-600) !important;
+  color: var(--color-white) !important;
+  line-height: 1.5;
+}
+.campus-description {
+  font-size: var(--font-size-14);
+  color: white;
+}

@@ -1,0 +1,36 @@
+.enquiryBg {
+  background-image: url("../../assets/iconbg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.margin-left {
+  margin-left: 96px !important;
+}
+
+.light-gray {
+  color: var(--color-dark-gray);
+}
+.color-black-secondary {
+  color: var(--color-light-black);
+}
+
+.query-text {
+  resize: none;
+}
+
+.enq-form-carousel-card {
+  bottom: 10%;
+  left: 5%;
+}
+
+.enquiry-form-title {
+  color: var(--color-light-black);
+  font-size: var(--font-size-48);
+  font-weight: var(--font-weight-600);
+}
+
+.enquiry-form-desc {
+  color: var(--color-dark-gray);
+}

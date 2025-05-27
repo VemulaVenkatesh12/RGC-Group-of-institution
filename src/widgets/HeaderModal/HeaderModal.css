@@ -1,0 +1,61 @@
+.modal-bg-img {
+  background-image: url("../../assets/header-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+
+.underline {
+  flex: 1;
+  height: 3px;
+}
+
+.hr-underline {
+  margin: 12px;
+  margin-left: 0px;
+}
+.header-items:hover {
+  background-color: #9efff0;
+}
+
+.modal-xl {
+  max-width: 1300px;
+}
+
+@media (min-width: 1920px) {
+  .modal-xl {
+    max-width: 1300px;
+  }
+}
+@media (min-width: 3840px) {
+  .modal-xl {
+    max-width: 1300px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .modal-xl {
+    max-width: 100%;
+  }
+}
+
+.header-modal {
+  border-radius: 10px !important;
+}
+
+.red {
+  background-color: var(--color-vibrant-red);
+}
+
+.green {
+  background-color: var(--color-aqua-teal);
+}
+
+.purple {
+  background-color: #9747ff;
+}
+
+.yellow {
+  background-color: #ffbf00;
+}

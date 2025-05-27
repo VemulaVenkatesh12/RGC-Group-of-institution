@@ -1,0 +1,7 @@
+.bg-yellow {
+  background-color: var(--color-yellow-green);
+}
+
+.bg-green {
+  background-color: var(--color-deep-teal);
+}

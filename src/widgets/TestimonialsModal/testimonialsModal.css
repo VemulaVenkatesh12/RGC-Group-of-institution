@@ -1,0 +1,29 @@
+.desc-text {
+  text-align: justify;
+}
+
+.modal-lg {
+  max-width: 1000px !important;
+}
+
+@media (max-width: 576px) {
+  .modal-lg {
+    height: 100%;
+  }
+}
+
+.prev-arrow {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.next-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 10;
+}

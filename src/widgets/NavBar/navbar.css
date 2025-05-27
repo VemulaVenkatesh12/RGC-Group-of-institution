@@ -1,0 +1,19 @@
+/* Default: assume desktop by default */
+.desktop-header {
+  display: block;
+}
+
+.mobile-header {
+  display: none;
+}
+
+/* Switch to mobile layout when screen is smaller than 1200px */
+@media (max-width: 1199px) {
+  .desktop-header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: block;
+  }
+}

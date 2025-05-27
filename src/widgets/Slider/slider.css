@@ -1,0 +1,28 @@
+.slider-controls2 {
+  top: 30px;
+  right: 40px;
+  z-index: 10;
+}
+
+.slider-btn-color {
+  color: var(--color-deep-red);
+}
+
+.slider-btn-bg {
+  background: var(--color-deep-red-10-opacity);
+}
+
+.slider-btn:hover {
+  cursor: pointer !important;
+  background: var(--color-deep-red-10-opacity) !important ;
+  color: var(--color-deep-red) !important;
+}
+
+.slider-btn:active {
+  background: var(--color-deep-red-10-opacity) !important;
+  color: var(--color-deep-red) !important;
+}
+
+.slider-padding .slick-slide {
+  padding: 0 !important;
+}

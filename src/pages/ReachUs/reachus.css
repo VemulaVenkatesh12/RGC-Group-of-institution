@@ -1,0 +1,49 @@
+.reach-us-bg {
+  background-color: var(--color-off-white-gray);
+}
+.reach-us-btn {
+  color: var(--color-white);
+  border-radius: 0px;
+  background-color: var(--color-royal-purple) !important;
+}
+
+.reach-us-btn:hover {
+  color: var(--color-white);
+  border-radius: 0px;
+  background-color: var(--color-purple-on-hover) !important;
+}
+
+.reach-us-btn:active {
+  color: var(--color-white) !important;
+  background-color: var(--color-royal-purple) !important;
+}
+
+.reach-us-input,
+.reach-us-textarea {
+  border: 1px solid #dddddd !important;
+  font-family: var(--font-family-poppins) !important;
+}
+
+.reach-us-input:focus,
+.reach-us-textarea:focus {
+  box-shadow: none;
+}
+
+.reach-us-input::placeholder {
+  font-family: var(--font-family-poppins) !important;
+  font-size: var(--font-size-14) !important;
+  font-weight: var(--font-weight-400) !important;
+  color: var(--color-cool-gray) !important;
+}
+
+.reach-us-textarea {
+  resize: none;
+}
+
+.reach-us-textarea::placeholder {
+  color: var(--color-cool-gray) !important;
+}
+
+.r-course-option {
+  color: var(--color-cool-gray) !important;
+}

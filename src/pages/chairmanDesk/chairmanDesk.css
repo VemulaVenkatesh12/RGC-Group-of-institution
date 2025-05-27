@@ -1,0 +1,13 @@
+.custom-img {
+  width: 70px;
+  height: 70px;
+}
+
+.chairman-bg {
+  background-color: var(--color-pale-pink) !important;
+}
+
+.chairman-img-card {
+  top: 50%;
+  left: 27%;
+}

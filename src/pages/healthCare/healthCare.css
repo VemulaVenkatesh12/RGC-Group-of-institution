@@ -1,0 +1,56 @@
+.health-care-card-body {
+  background-color: var(--color-white);
+}
+
+.hc-view-now-btn {
+  background-color: var(--color-deep-red) !important;
+}
+
+.hc-view-now-btn:hover {
+  background-color: var(--color-red-on-hover) !important;
+}
+.hc-view-now-btn:active {
+  background-color: var(--color-deep-red) !important;
+}
+
+.hc-know-more-btn {
+  position: absolute;
+  background-color: var(--color-deep-red);
+  bottom: 20%;
+  left: 30%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+.hc-know-more-btn:hover {
+  background-color: var(--color-red-on-hover) !important;
+}
+.hc-know-more-btn:active {
+  background-color: var(--color-deep-red) !important;
+}
+
+.health-card:hover .health-care-card-body {
+  background-color: #ffeded !important;
+}
+
+.health-card:hover .hc-know-more-btn {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease;
+}
+
+.health-card:hover .double-arrow-icon path {
+  fill: var(--color-deep-red);
+}
+
+.hc-apply-now {
+  background-color: var(--color-deep-red) !important;
+}
+
+.hc-apply-now:hover {
+  background-color: var(--color-red-on-hover) !important;
+}
+.hc-apply-now:active {
+  background-color: var(--color-deep-red) !important;
+}

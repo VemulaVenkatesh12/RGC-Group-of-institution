@@ -1,0 +1,20 @@
+.card-img {
+  width: 75%;
+  left: -30%;
+}
+
+.card-bg {
+  background-color: var(--color-light-pink-beige);
+}
+
+.custom-card {
+  min-width: 160px;
+}
+
+.p-text {
+  color: var(--color-charcoal-gray);
+}
+
+.our-history-bg {
+  background-color: var(--color-pale-pink);
+}

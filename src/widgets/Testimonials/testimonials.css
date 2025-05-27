@@ -1,0 +1,41 @@
+.slider-card {
+  background-color: var(--color-neutral-light-gray);
+  border-top: 4px solid var(--color-royal-purple);
+  min-height: 263px !important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.slider-coment {
+  color: var(--color-light-black);
+  font-size: var(--font-size-14);
+}
+.slider-user {
+  height: 80px;
+  width: 80px;
+}
+
+.slick-slide {
+  padding: 10px;
+}
+
+.slider-card:hover {
+  cursor: pointer !important;
+}
+
+.quotes {
+  color: var(--color-deep-red) !important;
+  font-size: var(--font-size-18);
+}
+
+@media (max-width: 1400px) {
+  .testimonial-title {
+    font-size: var(--font-size-32) !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  .testimonials-slider-card {
+    min-height: 250px !important;
+  }
+}

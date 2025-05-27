@@ -1,0 +1,37 @@
+.double-quotes {
+  height: 38px;
+  width: 50px;
+}
+
+.testimonials-image {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+@media (max-width: 576px) {
+  .testimonials-image {
+    margin-top: 0;
+    width: 120px !important;
+    height: 120px !important;
+  }
+}
+
+.me-negative-3 {
+  margin-inline-end: -1rem;
+}
+
+.close-icon {
+  font-size: 18px;
+}
+
+@media (max-width: 576px) {
+  .close-icon {
+    font-size: 35px;
+  }
+}
+
+.testimonial-slide-content {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}

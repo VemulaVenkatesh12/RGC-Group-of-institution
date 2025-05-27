@@ -1,0 +1,18 @@
+.chairman-bg {
+  background-color: var(--color-pale-pink);
+}
+.reach-us-btn {
+  color: var(--color-white);
+  border-radius: 5px;
+  background-color: var(--color-royal-purple);
+}
+
+.reach-us-btn:hover {
+  color: var(--color-white);
+  border-radius: 5px;
+  background-color: var(--color-purple-on-hover);
+}
+
+.chairman-text {
+  font-weight: var(--font-weight-600);
+}

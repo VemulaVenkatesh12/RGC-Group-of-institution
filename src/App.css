@@ -1,0 +1,217 @@
+:root {
+  /* colors */
+  --color-dark-gray: #808080;
+  --color-medium-gray: #868686;
+  --color-light-medium-gray: #a4a4a4;
+  --color-light-gray: #a0a0a0;
+  --color-neutral-gray: #f4f4f4;
+  --color-neutral-light-gray: #fafafa;
+  --color-grayish-purple: #525271;
+  --color-slate-gray: #6e757c;
+  --color-soft-gray: #e7e7e7;
+  --color-charcoal-gray: #424242;
+  --color-off-white-gray: #f7f7f7;
+  --color-cool-gray: #737477;
+  --color-light-neutral-gray: #f5f5f5;
+  --color-steel-gray: #6d6e76;
+  --color-pale-pink: #faf6f6;
+  --color-light-pink-beige: #f3edeb;
+  --color-pastel-pink: #fff6f6;
+  --color-royal-purple: #461f44;
+  --color-purple: #592ea9;
+  --color-deep-red: #d92d28;
+  --color-vibrant-red: #da1e25;
+  --color-pure-black: #000000;
+  --color-dark-black: #181818;
+  --color-neutral-black: #0d0d25;
+  --color-deep-purple-black: #1c1b1f;
+  --color-charcoal-black: #171717;
+  --color-light-black: #333333;
+  --color-base-dark: #232536;
+  --color-black-blue: #161722;
+  --color-white: #ffffff;
+  --color-golden-yellow: #c3a925;
+  --color-yellow-green: #c1c140;
+  --color-olive-yellow: #a18b00f2;
+  --color-mustard-yellow: #cfb720;
+  --color-peachy-orange: #ffd7a0;
+  --color-deep-teal: #159696;
+  --color-teal-green: #0e947a;
+  --color-aqua-teal: #06a38b;
+  --color-teal-green-10-opacity: #0e947a1a;
+  --color-royal-purple-10-opacity: #461f441a;
+  --color-golden-yellow-10-opacity: #c3a9251a;
+  --color-deep-red-10-opacity: #d92d281a;
+  --color-dark-purple-10-opacity: #2a0b581a;
+
+  --color-teal-on-hover: #52b39f;
+  --color-red-on-hover: #c02822;
+  --color-purple-on-hover: #6b1f68;
+  --color-black-on-hover: #413b3b;
+
+  /* font-size */
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-24: 24px;
+  --font-size-32: 32px;
+  --font-size-42: 42px;
+  --font-size-48: 48px;
+  --font-size-64: 64px;
+
+  /* font-weight */
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-900: 900;
+
+  /* font-family */
+  --font-family-poppins: poppins;
+  --font-family-work-sans: work sans;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+p {
+  font-family: var(--font-family-poppins) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-family-work-sans) !important;
+}
+
+li a {
+  font-family: var(--font-family-poppins) !important;
+}
+.row,
+p {
+  margin: 0%;
+  padding: 0%;
+}
+.bg-red {
+  background-color: #d92d28;
+}
+
+.bg-red:hover {
+  background-color: #c6423e;
+}
+
+.hyperlink {
+  text-decoration: none !important;
+  color: #000 !important;
+}
+
+h1 {
+  font-size: var(--font-size-64) !important;
+}
+
+h2 {
+  font-size: var(--font-size-48) !important;
+}
+
+h3 {
+  font-size: var(--font-size-32) !important;
+}
+
+h4 {
+  font-size: var(--font-size-24) !important;
+}
+h5 {
+  font-size: var(--font-size-18) !important;
+}
+
+.p-font-size-12 {
+  font-size: var(--font-size-12) !important;
+}
+.p-font-size-14 {
+  font-size: var(--font-size-14) !important;
+}
+.p-font-size-16 {
+  font-size: var(--font-size-16) !important;
+}
+
+.p-font-size-18 {
+  font-size: var(--font-size-18) !important;
+}
+
+.pdf-icon {
+  width: 62px;
+  height: 62px;
+}
+.bg-gray {
+  background-color: #f7f7f7 !important;
+}
+
+.p-color {
+  color: #525271 !important;
+}
+
+.pdf-link {
+  color: #333333 !important;
+}
+
+.purple-text {
+  color: #592ea9 !important;
+}
+
+a {
+  font-family: var(--font-family-poppins) !important;
+}
+
+.red-btn {
+  background-color: #d92d28 !important;
+  font-weight: var(--font-weight-500) !important;
+}
+.red-btn:active {
+  background-color: #d92d28 !important;
+}
+
+.red-btn:hover {
+  background-color: #c6423e !important;
+}
+
+button {
+  font-family: var(--font-family-poppins) !important;
+}
+
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.course-duration-text {
+  color: #525271;
+}
+
+.red {
+  background-color: #da1e25;
+}
+
+.green {
+  background-color: #06a38b;
+}
+
+.purple {
+  background-color: #9747ff;
+}
+
+.yellow {
+  background-color: #ffbf00;
+}
+
+.text-red {
+  color: #d92d28;
+}
+
+.fw-bold {
+  font-weight: var(--font-weight-600) !important;
+}

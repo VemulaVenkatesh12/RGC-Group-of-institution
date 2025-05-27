@@ -1,0 +1,13 @@
+.custom-img {
+  width: 70px;
+  height: 70px;
+}
+
+.management-bg {
+  background-color: var(--color-pale-pink) !important;
+}
+
+.management-img-card {
+  top: 60%;
+  left: 27%;
+}

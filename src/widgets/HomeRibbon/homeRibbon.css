@@ -1,0 +1,12 @@
+.ribbon-title {
+  font-weight: var(--font-weight-600) !important;
+}
+
+.ribbon {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 10;
+}

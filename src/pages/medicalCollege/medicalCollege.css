@@ -1,0 +1,12 @@
+.medical-college-bg {
+  background-color: var(--color-pale-pink) !important;
+}
+
+.medical-dept {
+  font-weight: var(--font-weight-400);
+}
+
+.facilities {
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-16);
+}

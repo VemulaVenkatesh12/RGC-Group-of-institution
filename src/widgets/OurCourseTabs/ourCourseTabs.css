@@ -1,0 +1,31 @@
+.course-card-bg {
+  background-color: var(--color-mustard-yellow);
+}
+
+.our-course-btn {
+  background-color: var(--color-neutral-light-gray) !important;
+  color: var(--color-pure-black) !important;
+  min-width: 250px;
+  height: 53px;
+  font-weight: var(--font-weight-500);
+}
+
+.our-course-btn:hover {
+  background-color: var(--color-peachy-orange) !important;
+}
+
+.our-course-pill .our-course-link.active {
+  background-color: var(--color-peachy-orange) !important;
+}
+
+.course-tabs-list {
+  display: flex;
+  padding: 2px;
+  margin: 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.our-course-intro-bg {
+  background-color: var(--color-mustard-yellow);
+}

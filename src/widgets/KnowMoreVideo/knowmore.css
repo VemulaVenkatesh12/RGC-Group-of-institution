@@ -1,0 +1,137 @@
+.infobg {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/infogif.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 68vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  object-fit: cover;
+}
+.playbtn {
+  height: 7%;
+  width: 7%;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.playbtn:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 575.98px) {
+  .playbtn {
+    height: 12%;
+    width: 12%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .playbtn {
+    height: 10%;
+    width: 10%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .playbtn {
+    height: 8%;
+    width: 8%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .playbtn {
+    height: 7%;
+    width: 7%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .playbtn {
+    height: 7%;
+    width: 7%;
+  }
+}
+
+
+
+
+
+
+
+/*
+.infobg {
+  position: relative;
+  height: 68vh !important;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 1px;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.content-overlay {
+  z-index: 1;
+  position: relative;
+}
+
+.playbtn {
+  height: 70px;
+  width: 70px;
+  transition: transform 0.3s ease;
+}
+
+.playbtn:hover {
+  transform: scale(1.1);
+}
+
+.description-text {
+  font-size: var(--font-size-16);
+  line-height: 1.6;
+  margin-top: 1rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+.video-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  color: white;
+}
+
+.video-fallback-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1a1a1a;
+  background-image: linear-gradient(45deg, #222 25%, transparent 25%, transparent 75%, #222 75%, #222),
+                    linear-gradient(45deg, #222 25%, transparent 25%, transparent 75%, #222 75%, #222);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  z-index: 0;
+}*/

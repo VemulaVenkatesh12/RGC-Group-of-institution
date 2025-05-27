@@ -1,0 +1,13 @@
+.light-gray-p {
+  color: var(--color-charcoal-gray);
+}
+
+.affiliations-bg {
+  background: url("../../assets/campusLife-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.affiliations-card {
+  height: 247px !important;
+}

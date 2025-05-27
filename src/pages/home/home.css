@@ -1,0 +1,92 @@
+.aboutBg {
+  background-image: url("../../assets/iconbg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.dropdown-cust-btn {
+  background-color: var(--color-white) !important;
+  border: none;
+  /* width: 329px; */
+  height: 45px;
+}
+.coursebtn {
+  background-color: var(--color-white) !important;
+  color: var(--color-pure-black) !important;
+  width: 257px;
+  height: 53px;
+}
+.coursebtn:hover {
+  background-color: var(--color-peachy-orange) !important;
+}
+.slider-thumb-image {
+  height: 55vh;
+}
+.btn-read-more {
+  background-color: var(--color-deep-red) !important;
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-500) !important;
+  font-size: var(--font-size-16) !important;
+}
+.btn-read-more:hover {
+  background-color: var(--color-red-on-hover) !important;
+  color: var(--color-white);
+}
+.btn-read-more:active {
+  background-color: var(--color-deep-red) !important;
+  color: var(--color-white) !important;
+}
+
+.btn-visit {
+  background-color: var(--color-light-black) !important;
+  color: var(--color-white);
+  font-weight: var(--font-weight-500) !important;
+  text-transform: uppercase;
+}
+.btn-visit:hover {
+  background-color: var(--color-pure-black) !important;
+  color: var(--color-white);
+}
+.btn-visit:active {
+  background-color: var(--color-light-black) !important;
+  color: var(--color-white) !important;
+}
+
+.slider-controls2 {
+  top: 30px;
+  right: 40px;
+  z-index: 10;
+}
+
+.carousel-card-para {
+  bottom: 20px;
+  right: 20px;
+  color: var(--color-white);
+}
+.card-heading-title {
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-600) !important ;
+}
+.card-link-know {
+  color: var(--color-deep-red);
+  font-size: var(--font-size-12);
+  font-weight: var(--font-weight-600);
+}
+
+.caro-card-title {
+  top: 20px;
+  left: 30px;
+  font-weight: var(--font-weight-600) !important;
+}
+
+@media (max-width: 768px) {
+  .caro-card-title {
+    font-size: var(--font-size-24) !important;
+  }
+}
+
+.home-auto-slider-bg {
+  background-color: var(--color-neutral-gray) !important;
+}

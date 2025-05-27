@@ -1,0 +1,37 @@
+.table-spacing {
+  border-collapse: separate;
+  border-spacing: 15px;
+  margin-left: -0.9rem;
+}
+
+.table-head {
+  background-color: var(--color-royal-purple-10-opacity) !important;
+  color: var(--color-royal-purple) !important;
+}
+
+.table-row-bg {
+  background-color: var(--color-neutral-light-gray) !important;
+}
+
+.alumni-log-bg {
+  background-color: var(--color-light-black) !important;
+}
+
+.alumni-log-bg:hover {
+  background-color: var(--color-black-on-hover) !important;
+}
+.alumni-log-bg:active {
+  background-color: var(--color-light-black) !important;
+}
+
+.alumni-title-color {
+  color: var(--color-deep-red) !important;
+}
+
+.alumni-sub-text {
+  color: var(--color-light-black) !important;
+}
+
+td {
+  font-family: var(--font-family-poppins);
+}

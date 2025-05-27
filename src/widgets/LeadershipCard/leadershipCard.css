@@ -1,0 +1,46 @@
+.leadership-card-body {
+  background-color: var(--color-white);
+}
+
+.leadership-btn {
+  background-color: var(--color-white) !important;
+  color: var(--color-pure-black) !important;
+}
+
+.leadership-btn:hover {
+  background-color: var(--color-white) !important;
+  color: var(--color-pure-black) !important;
+}
+.leadership-btn:active {
+  background-color: var(--color-white) !important;
+}
+
+.leadership-btn {
+  position: absolute;
+  background-color: var(--color-white);
+  bottom: 30%;
+  left: 25%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+.leadership-card-body {
+  background-color: var(--color-white) !important;
+  color: var(--color-light-black) !important;
+}
+
+.leadership-card:hover .leadership-card-body {
+  background-color: var(--color-deep-red) !important;
+  color: var(--color-white) !important;
+  padding-left: 1.5rem !important;
+}
+
+.leadership-card {
+  border: none;
+}
+.leadership-card:hover .leadership-btn {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease;
+}

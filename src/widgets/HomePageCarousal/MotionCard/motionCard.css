@@ -1,0 +1,23 @@
+.animation-text {
+  font-weight: var(--font-weight-500) !important;
+}
+
+.hr-wrapper {
+  display: block;
+  width: 60%;
+}
+
+.primary-animation-text {
+  font-weight: var(--font-weight-700) !important;
+}
+
+@media (max-width: 1400px) {
+  .motion-card-text-container > * {
+    margin-bottom: 4rem !important;
+  }
+}
+
+.motion-card-container {
+  height: 80vh !important;
+  width: 100vw !important;
+}
