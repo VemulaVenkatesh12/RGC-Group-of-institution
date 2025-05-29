@@ -89,8 +89,8 @@ const Home: React.FC = () => {
       </div>
       <div>
        <OurCourse 
-        title={landingdata?.AboutCourseslandingpage.title}
-        subtitle={landingdata?.AboutCourseslandingpage.subtitle}
+        title={landingdata?.About_Courses_landing_page.title}
+        subtitle={landingdata?.About_Courses_landing_page.subtitle}
         />
       </div>
       <div className="text-center mt-5">
