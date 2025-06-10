@@ -553,6 +553,12 @@ const Header: React.FC = () => {
                           href: aboutUsMenu?.text5_link || "undefined",
                           column: "left",
                         },
+
+                        {
+                          name: "Departments",
+                          href: "/departments",
+                          column: "right",
+                        },
                       ]
                     )
                   }
@@ -607,6 +613,12 @@ const Header: React.FC = () => {
                           href: academicsMenu?.text6_link || "undefined",
                           column: "right",
                         },
+
+                        {
+                          name: "Students Cell",
+                          href: "/Students-Cell",
+                          column: "right",
+                        }
                       ]
                     )
                   }

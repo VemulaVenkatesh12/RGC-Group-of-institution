@@ -204,7 +204,7 @@ const RGCCommerceAndAdministration: React.FC = () => {
                 style={{ backgroundColor: cardData.backgroundColor }}
               >
                 <div className="row">
-                  <div className="col-lg-4">
+                  <div className="col-4 col-sm-4 col-lg-4">
                     <img
                       src={cardData.logo}
                       alt="institution-logo"

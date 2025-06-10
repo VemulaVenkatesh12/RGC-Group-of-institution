@@ -19,7 +19,7 @@ const ContentSection: React.FC<IContentSectionProps> = ({
 }) => {
   return (
     <div className="mt-md-0 mt-4 p-md-2 p-2">
-      <h5 className="fw-bold">{primaryHeader}</h5>
+      <h6 className="fw-bold">{primaryHeader}</h6>
       <h3 className="fw-bold">{secondaryHeader}</h3>
       <p className="p-font-size-14">{description}</p>
 

@@ -43,6 +43,12 @@ import NationalDentalRegister from "./pages/NationalDentalRegister";
 import OurJournal from "./pages/ourJournal";
 import ExternalPublications from "./pages/externalPublications";
 import NoticeBoard from "./pages/noticeBoard";
+
+//Anil added
+import EngineeringDepartments from "./pages/EngineeringDepartments";
+import DepartmentDetails from "./pages/DepartmentDetails";
+import StudentCellData from "./pages/StudentsCell";
+
 function App() {
   return (
     <BrowserRouter>
@@ -51,6 +57,9 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/departments" element={<EngineeringDepartments />} />
+        <Route path="/departments/:deptId" element={<DepartmentDetails />} />
+        <Route path="/students-cell" element={<StudentCellData />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/work-for-us" element={<WorkForUs />} />
         <Route path="/course-details" element={<CourseDetailPage />} />
