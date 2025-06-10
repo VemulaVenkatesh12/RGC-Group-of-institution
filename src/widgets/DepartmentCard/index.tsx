@@ -5,7 +5,7 @@ interface DepartmentCardProps {
   description: string;
   image: string;
 }
-
+// DepartmentCard Component
 const DepartmentCard: React.FC<DepartmentCardProps> = ({ title, description, image }) => {
   return (
     <div className="col-16 col-lg-15">
