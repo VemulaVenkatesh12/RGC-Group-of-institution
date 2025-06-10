@@ -16,7 +16,7 @@
   background: #0e947a;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   flex-direction: column;
   opacity: 0;
   color: var(--color-white);
@@ -46,3 +46,15 @@
   font-size: var(--font-size-24);
   font-weight: var(--font-weight-600);
 }
+@media screen and (max-width: 1024px) {
+  .overlay-text {
+    font-size: 20px;
+    bottom: 5%;
+    left: 20%;
+    transform: translate(-20%, 0);
+    width: 90%;
+    padding: 10px;
+
+  } 
+}
+

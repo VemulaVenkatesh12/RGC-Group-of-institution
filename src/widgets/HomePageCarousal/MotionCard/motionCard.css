@@ -21,3 +21,236 @@
   height: 80vh !important;
   width: 100vw !important;
 }
+
+/* Base styles for motion card */
+.motion-card-container {
+  min-height: 400px;
+  height: auto;
+}
+
+.motion-images-wrapper {
+  min-height: 400px;
+}
+
+.motion-card-image {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.motion-text-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+}
+
+.back-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(1px);
+  z-index: 1;
+}
+
+.motion-primary-btn {
+  font-size: clamp(0.9rem, 2.5vw, 1rem) !important;
+  font-weight: 600 !important;
+  min-height: 45px;
+}
+
+.motion-secondary-btn {
+  font-size: clamp(0.8rem, 2vw, 0.9rem) !important;
+  min-height: 40px;
+}
+
+/* Mobile specific button styles */
+.motion-primary-btn-mobile {
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  padding: 8px 20px !important;
+  min-height: auto !important;
+  width: auto !important;
+  display: inline-block !important;
+}
+
+.motion-secondary-btn-mobile {
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+  padding: 6px 16px !important;
+  min-height: auto !important;
+  width: auto !important;
+  display: inline-block !important;
+  margin-bottom: 20%;
+}
+
+.motion-mobile-content {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.motion-info-section {
+  padding: 0.5rem 0;
+}
+
+/* Mobile specific styles */
+@media (max-width: 768px) {
+  .motion-card-container {
+    min-height: 350px;
+  }
+  
+  .motion-images-wrapper {
+    min-height: 350px;
+  }
+  
+  .motion-card-image {
+    max-height: 350px;
+  }
+  
+  .motion-text-overlay {
+    padding: 1rem 0 !important;
+    align-items: flex-start !important;
+    padding-top: 1.5rem !important;
+  }
+  
+  .motion-main-title {
+    margin-bottom: 1rem !important;
+    text-align: center !important;
+    font-size: clamp(1.1rem, 4.5vw, 1.8rem) !important;
+  }
+  
+  .motion-primary-btn-mobile,
+  .motion-secondary-btn-mobile {
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .motion-info-section {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .motion-info-section hr {
+    margin: 1rem auto !important;
+    width: 50%;
+  }
+  
+  .motion-mobile-content {
+    font-size: 0.8rem;
+  }
+  
+  .motion-mobile-content h6 {
+    font-size: 0.85rem !important;
+  }
+  
+  .motion-mobile-content p {
+    font-size: 0.7rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 576px) {
+  .motion-card-container {
+    min-height: 320px;
+  }
+  
+  .motion-images-wrapper {
+    min-height: 320px;
+  }
+  
+  .motion-card-image {
+    max-height: 320px;
+  }
+  
+  .motion-text-overlay {
+    align-items: flex-start !important;
+    padding-top: 1rem !important;
+  }
+  
+  .motion-main-title {
+    font-size: clamp(1rem, 5vw, 1.6rem) !important;
+    margin-bottom: 0.8rem !important;
+  }
+  
+  .container-fluid {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  
+  .motion-primary-btn-mobile {
+    font-size: 0.8rem !important;
+    padding: 6px 16px !important;
+  }
+  
+  .motion-secondary-btn-mobile {
+    font-size: 0.75rem !important;
+    padding: 5px 12px !important;
+  }
+  
+  .motion-mobile-content {
+    max-width: 95%;
+  }
+  
+  .motion-mobile-content h6 {
+    font-size: 0.8rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+  
+  .motion-mobile-content p {
+    font-size: 0.65rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 0.4rem !important;
+  }
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+  .motion-card-container {
+    min-height: 500px;
+  }
+  
+  .motion-images-wrapper {
+    min-height: 500px;
+  }
+  
+  .motion-card-image {
+    max-height: 500px;
+  }
+}
+
+/* Ensure text is always visible */
+.motion-text-overlay * {
+  position: relative;
+  z-index: 3;
+}
+
+/* Animation classes */
+.primary-animation-text {
+  animation: fadeInUp 1s ease-out;
+}
+
+.animation-text {
+  animation: fadeInLeft 1s ease-out 0.5s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

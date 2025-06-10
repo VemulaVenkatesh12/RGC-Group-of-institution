@@ -1,4 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
+import campusBanner from "../../Images/campusfacilitiesbanner.png";
+import busimage from "../../Images/busimage.png";
+import collegehostel from "../../Images/College hostel.png";
+import computerlab from "../../Images/Computerlab.png";
+import researchcentre from "../../Images/Researchcentre.png";
+import studenthostel from "../../Images/StudentHostel.png";
+import wificampus from "../../Images/wificampus.png";
+import games from "../../Images/games.png";
 import Banner from "../../widgets/Banner";
 import { GoArrowUpRight } from "react-icons/go";
 import "./campusLife.css";
@@ -17,6 +25,7 @@ import {
 import { fetchTourData } from "../../utils/utilityFunctionServices";
 import { TourResPonseData } from "../../services/takeATour";
 import { getFullImageUrl } from "../../services/actualPath";
+
 
 const CampusLife: React.FC = () => {
   const [campusLifeData, setcampusLifeData] =
@@ -55,10 +64,85 @@ const CampusLife: React.FC = () => {
     return index % 2 === 0 ? "var(--color-off-white-gray)" : undefined;
   };
 
+  const facilitiesData = [
+    {
+      primaryHeader: "Transportation",
+      description:
+        "College buses are available to the students for daily trips and various academic and other programs. In addition, many public transports are also connected to the campus location.",
+      imageSrc: busimage,
+      imageAlt: "Transportation Schedule",
+      backgroundColor: "bg-green-50",
+      imagePosition: "right",
+      navigateTo: "https://example.com/schedule",
+    },
+    {
+      primaryHeader: "Games and activities",
+      description:
+        "The campus consisting the colleges and hostels are fully secured with adequate trained guards and with CCTV monitoring system. All students and staff are provided ID card from the institution and their vehicles are allowed to park in the campus with the institutional permit sticker on the vehicle. Other vehicles are allowed entry to the campus with the proper checking by the security personals. The institutional staff and hostel students are allowed to move in and out to the campus after 07.00 PM through night till 07.00 AM only with their ID card for the physical verification by the security guards. Others are not allowed entry to the campus during this time, unless permits by the institutional authorities and physical checking by the security guards. Any suspicious and endangering item or incident, noticed in the campus by the security personals will be immediately reported to the college authorities and to the police department as may be required.",
+      imageSrc: games,
+      imageAlt: "Games & Activities",
+      backgroundColor: "bg-green-50",
+      imagePosition: "left",
+      navigateTo: "https://example.com/schedule",
+    },
+    {
+      primaryHeader: "Student Hostel",
+      description:
+        "The campus consisting the colleges and hostels are fully secured with adequate trained guards and with CCTV monitoring system. All students and staff are provided ID card from the institution and their vehicles are allowed to park in the campus with the institutional permit sticker on the vehicle. Other vehicles are allowed entry to the campus with the proper checking by the security personals. The institutional staff and hostel students are allowed to move in and out to the campus after 07.00 PM through night till 07.00 AM only with their ID card for the physical verification by the security guards. Others are not allowed entry to the campus during this time, unless permits by the institutional authorities and physical checking by the security guards. Any suspicious and endangering item or incident, noticed in the campus by the security personals will be immediately reported to the college authorities and to the police department as may be required.",
+      imageSrc: studenthostel,
+      imageAlt: "Student Hostel",
+      backgroundColor: "bg-green-50",
+      imagePosition: "right",
+      navigateTo: "https://example.com/schedule",
+      btnLabel: "application for student hostel",
+    },
+    {
+      primaryHeader: "Research Centre",
+      description:
+        "The research Centre of the institution has adequate facilities for the research activities by the teaching faculties and post graduate students in all the specialties. All national and international journals in both medical and dental subjects are available in the Central library in addition to the large collections of reference books in the departmental library for the study of research activities and updating the knowledge across the world. The college is also publishing dental journal regularly by name  The case studies and reports done by the faculties and students are published in the dental journal of the institution. The faculties are allowed to take up any projects relating to dentistry research and study with the institutional infrastructure.College buses are available to the students for daily trips and various academic and other programs. In addition, many public transports are also connected to the campus location.",
+      imageSrc: researchcentre,
+      imageAlt: "Research Centre",
+      backgroundColor: "bg-green-50",
+      imagePosition: "left",
+      navigateTo: "https://example.com/schedule",
+    },
+    {
+      primaryHeader: "Computer Lab",
+      description:
+        "The dental college has facilitated a Computer lab with 30 latest systems, all with internet connectivity, printers, scanner and server. The lab provides facility for university online valuation work of the examination answer scripts for all streams of medical education as required for the university.",
+      imageSrc: computerlab,
+      imageAlt: "Computer Lab",
+      backgroundColor: "bg-green-50",
+      imagePosition: "right",
+      navigateTo: "https://example.com/schedule",
+    },
+    {
+      primaryHeader: "Wi-Fi Campus",
+      description:
+        "The college campus is Wi-Fi enabled for the excellent networking of all the computer systems in all the departments of the college and for the usage of authorised mobiles and laptops. Secured Wi-Fi networking and internet is also available in the hostels, hospital, canteens, and cafeteria, even in garden and playgrounds.",
+      imageSrc: wificampus,
+      imageAlt: "Wi-Fi Campus",
+      backgroundColor: "bg-green-50",
+      imagePosition: "left",
+      navigateTo: "https://example.com/schedule",
+    },
+    {
+      primaryHead: "College Hostel",
+      description:
+        "The college has hostel facility for the girls and boys. The hostels are situated in the college campus with a capacity for 300 students. Different types of rooms are available for the students. Rooms with sharing bath room and private rooms with toilets attached are unique for the students to choose, subject to availability. Common Television Entertainment, Indoor games facility, Yoga Room and Meditation /Prayer rooms are also provided in the hostel. 24 Hours warden is available for good care of the students in hostel. Outside foods are not allowed inside the hostel to avoid food adulteration. On Call Doctor and Nursing facility is available in the hostel. Local guardians and visitors are permitted to meet the students in the Visitor room during day time after 07.00 AM and upto 6.00 PM. Many varieties of food and snacks of both vegetarian and Non-vegetarian are available for students in their favourite taste in different styles of Indian and more.",
+      imageSrc: collegehostel,
+      imageAlt: "College Hostel",
+      backgroundColor: "bg-green-50",
+      imagePosition: "right",
+      navigateTo: "https://example.com/schedule",
+    },
+  ];
+
+
   return (
     <>
       <Banner
-        bannerText={campusLifeData?.banner_title}
+        bannerText={"College & campus Facilities"}
         bannerImageClassName="rgc-student-scholarship-banner"
         breadCrumbsList={[
           {
@@ -66,168 +150,36 @@ const CampusLife: React.FC = () => {
             to: campusLifeData?.banner_campus_life_link || "#",
           },
         ]}
-        bannerImageUrl={getFullImageUrl(campusLifeData?.banner_image.formats.large.url) || ""}
+        bannerImageUrl={campusBanner}
       />
 
-      <TitleAndMeta
-        primaryHeader={campusLifeData?.campus_facilities?.title}
-        secondaryHeader={campusLifeData?.campus_facilities?.subtitle}
-        description={campusLifeData?.campus_facilities?.Description || ""}
-      />
 
-      <div className="container p-0">
-        <div className="row mt-5 mb-5">
-          {campusLifeData?.campus_facilities?.facilities?.length ? (
-            campusLifeData.campus_facilities.facilities
-              .slice(0, 3)
-              .map((facility) => (
-                <div key={facility.id} className="col-lg-4 col-md-4 col-sm-12">
-                  <div className="card rounded-bottom-0">
-                    <img
-                      src={getFullImageUrl(facility?.image?.formats?.large?.url) || ""}
-                      alt={facility.facilities_name}
-                      className="img-fluid"
-                    />
-                    <div className="card-body campus-facilities-card-body rounded-bottom-1">
-                      <h5 className="fw-bold text-white mb-0">
-                        {facility.facilities_name}
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-              ))
-          ) : (
-            <p>No facilities available.</p>
-          )}
-        </div>
+      <div className="container mt-5 mb-5">
+
+        <h6>Tobacco Cessation Cell</h6>
+        <p className="text-justify">
+          Tobacco cessation cell in a dental institution, where an Oral Medicine specialist does the behavioural counseling during which patients are advised to stop the tobacco habits, with customized structured counseling methods. Intervention to stop the habit is performed in the form of questions and scores. Based on the patient’s response, a quit date is set after which the patient should not be performing the habit at all.The scores also determine whether the patient requires Nicotine Replacement Therapy (NRT)/any other medicines in the form of drugs so as to reduce the cravings and withdrawal symptoms associated with stopping the habit.Tobacco cessation cell has been functional in Department of Oral Medicine and Radiology in Sri Rajiv Gandhi College of Dental Sciences and Hospital, Cholanagar since 2014.
+        </p>
       </div>
 
-      <div className="container pt-5 mb-5 px-0">
-        <div className="row">
-          {campusLifeData?.tour_gallery?.slice(0, 2).map((item, index) => (
-            <div key={index} className="col-lg-6 col-md-6 col-sm-12">
-              <div
-                className={`card p-4 rounded-0 bg-white border-1 border-dark mb-4 ${
-                  index === 0 ? "campus-tour-card" : "gallery-card"
-                }`}
-              >
-                <div className="d-flex gap-4 align-items-center">
-                  <div>
-                    <h3 className="fw-bold">{item.title}</h3>
-                    <p className="p-font-size-14">{item.subtitle}</p>
-                  </div>
-                  <div className="ms-auto">
-                    <div className="p-2 arrow-icon-bg align-items-center">
-                      {index === 0 ? (
-                        <GoArrowUpRight
-                          onClick={handleScroll}
-                          size={24}
-                          className="arrow-icon arrow-icon-color"
-                        />
-                      ) : (
-                        <Link to="/gallery">
-                          <GoArrowUpRight
-                            size={24}
-                            className="arrow-icon arrow-icon-color"
-                          />
-                        </Link>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
 
-      {/* Info Image Sections from API */}
-      {campusLifeData?.block?.map((block, index) => (
-        <InfoImageSection
-          key={block.id}
-          primaryHeader={block.title}
-          secondaryHeader={block.subtitle}
-          description={block.Description}
-          imageSrc={getFullImageUrl(block.image?.url) || ""}
-          imageAlt={block.subtitle || "campus life"}
-          backgroundColor={getBackgroundColor(index)}
-          imagePosition={getImagePosition(index)}
-          navigateTo={block.Reach_US_link || block.Reach_Us_link}
-          btnLabel={block.Reach_US_text || block.Reach_Us_text}
-        />
+      {facilitiesData.map((facility, index) => (
+        <div key={index} className="mb-2">
+
+          <InfoImageSection
+            key={index}
+            primaryHeader={facility.primaryHeader}
+            description={facility.description}
+            imageSrc={facility.imageSrc}
+            imageAlt={facility.imageAlt}
+            backgroundColor={facility.backgroundColor}
+            navigateTo={facility.navigateTo}
+            imagePosition={getImagePosition(index)}
+            btnLabel={facility.btnLabel} // Optional
+          />
+        </div>
       ))}
 
-      <div ref={sectionRef}>
-        <KnowMoreVideo
-          imagePath={playButtonUrl || ""}
-          text={tourData?.take_a_tour?.title || "undefined"}
-          description={tourData?.take_a_tour?.Description || "Undefined"}
-          videoUrl={getFullImageUrl(tourData?.take_a_tour.video.url) || ""}
-        />
-      </div>
-
-      <div className="container mt-5 pb-3 position-relative">
-        <h5 className="fw-bold">
-          {campusLifeData?.Sports_Recreation?.title || "RGC Group"}
-        </h5>
-        <h3 className="fw-bold">
-          {campusLifeData?.Sports_Recreation?.subtitle ||
-            "Sports And Recreations"}
-        </h3>
-        <p className="p-font-size-14">
-          {campusLifeData?.Sports_Recreation?.Description}
-        </p>
-
-        <img
-          src={
-            getFullImageUrl(campusLifeData?.Sports_Recreation.sports_meet?.[0].image.formats
-              .large.url) || ""
-          }
-          alt="sports-ground"
-          className="img-fluid mt-4 ground-image"
-        />
-        <div className="card px-4 py-4 rounded-0 sports-img-card bg-white position-absolute">
-          <div className="d-flex gap-4 align-items-start">
-            <div className="p-2 rounded-2">
-              <h4 className="fw-bold">
-                {campusLifeData?.Sports_Recreation?.image_title}
-              </h4>
-              <p className="p-font-size-14">
-                {campusLifeData?.Sports_Recreation?.image_description}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container mt-5 mb-5 px-0">
-        <div className="row">
-          {Array.isArray(campusLifeData?.Sports_Recreation?.sports_meet) &&
-            campusLifeData.Sports_Recreation.sports_meet
-              .slice(0, 2)
-              .map((sport) => (
-                <div key={sport.id} className="col-lg-6 col-md-6 col-sm-12">
-                  <InfoCard
-                    text={sport.name}
-                    description={sport.Description}
-                    courseImage={getFullImageUrl(sport.image?.url) || ""}
-                    needApply={false}
-                    needLink={false}
-                  />
-                </div>
-              ))}
-
-          {(!Array.isArray(campusLifeData?.Sports_Recreation?.sports_meet) ||
-            campusLifeData.Sports_Recreation.sports_meet.length === 0) && (
-            <div className="col-12">
-              <p>No sports persons available</p>
-            </div>
-          )}
-        </div>
-      </div>
-
-      <div>
-        <EnquiryForm />
-      </div>
       <div>
         <IFrameBanner requiredFooterBorder={false} />
       </div>
@@ -237,5 +189,6 @@ const CampusLife: React.FC = () => {
     </>
   );
 };
+
 
 export default CampusLife;

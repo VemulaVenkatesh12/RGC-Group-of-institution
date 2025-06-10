@@ -58,6 +58,7 @@ const HomeSection2: React.FC<HomeSection2Props> = ({ landingData }) => {
                 speed={1600}
                 slidesToScroll={1}
                 autoplay={true}
+                autoplaySpeed={4000}
                 fade={true}
                 position="slider-controls2 position-absolute d-flex justify-content-end"
                 sliderPadding="slider-padding"

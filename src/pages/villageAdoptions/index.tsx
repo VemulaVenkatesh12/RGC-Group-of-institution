@@ -94,3 +94,4 @@ const VillageAdoptions: React.FC = () => {
 };
 
 export default VillageAdoptions;
+ 

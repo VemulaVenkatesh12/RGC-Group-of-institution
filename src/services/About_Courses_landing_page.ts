@@ -14,7 +14,7 @@ export interface LandingData {
   updatedAt: string;
   publishedAt: string;
   block: Block[];
-  AboutCourseslandingpage: AboutCoursesLandingPage;
+  About_Courses_landing_page: AboutCoursesLandingPage;
   about_us: AboutUs;
   testimonials: Testimonials;
   campus_life: CampusLifes;
