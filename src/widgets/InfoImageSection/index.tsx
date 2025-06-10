@@ -34,16 +34,19 @@ const InfoImageSection: React.FC<IInfoImageSectionProps> = ({
 
   return (
     <div className="position-relative pt-md-3 pb-md-5" style={{ backgroundColor }}>
-      <Container className="mt-5 p-0">
+      <Container className="mt-3 p-0">
+
+          {primaryHeader && (
+    <h6 className="px-2 ">{primaryHeader}</h6>
+  )}
         <Row
           className={`align-items-center flex-column-reverse flex-lg-row ${
             isImageLeft ? "" : "flex-lg-row-reverse"
           }`}
         >
           {/* Text Section */}
-          <Col xs={12} lg={6} className={`mb-4 text-justify px-4`}>
+          <Col xs={12} lg={6} className={`px-1`}>
             <ContentSection
-              primaryHeader={primaryHeader}
               secondaryHeader={secondaryHeader}
               description={description}
               navigateTo={navigateTo}
@@ -53,6 +56,7 @@ const InfoImageSection: React.FC<IInfoImageSectionProps> = ({
 
           {/* Image Section */}
           <Col xs={12} lg={6} style={imageStyle} className="text-center mb-4">
+    
             <Image
               src={imageSrc}
               alt={imageAlt}

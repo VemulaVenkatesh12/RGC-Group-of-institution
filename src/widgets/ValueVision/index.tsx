@@ -41,7 +41,7 @@ const ValueVision: React.FC<VisionProps> = ({
 
   return (
     <>
-      <div className="wrapper d-none d-xl-block">
+      <div className="wrapper d-none d-lg-block">
         <div className="visionImage">
           <div className="image-container">
             <img src={image} className="img-fluid" alt="" />
@@ -75,6 +75,7 @@ const ValueVision: React.FC<VisionProps> = ({
                 color: "var(--color-white)",
                 fontSize: title ? "48px" : "32px",
                 fontWeight: "var(--font-weight-600)",
+
               }}
             >
               {renderMainHeading}
@@ -88,7 +89,7 @@ const ValueVision: React.FC<VisionProps> = ({
           </div>
         </div>
       </div>
-      <div className="container d-block d-xl-none">
+      <div className="container d-block d-lg-none">
         <InfoImageSection
           primaryHeader={smallText}
           secondaryHeader={title}

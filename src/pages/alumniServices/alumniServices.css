@@ -1,8 +1,11 @@
 .table-spacing {
+  width: 100%;
   border-collapse: separate;
   border-spacing: 15px;
   margin-left: -0.9rem;
+  margin-right: auto; 
 }
+
 
 .table-head {
   background-color: var(--color-royal-purple-10-opacity) !important;
