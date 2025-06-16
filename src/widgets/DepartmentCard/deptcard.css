@@ -1,0 +1,19 @@
+.section-bullets {
+    padding-left: 25px;
+    margin: 0;
+}
+
+.section-bullets li {
+    font-size: 1.8rem;
+    list-style-type: disc;
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
