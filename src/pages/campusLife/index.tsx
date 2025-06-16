@@ -14,9 +14,7 @@ import KnowMoreVideo from "../../widgets/KnowMoreVideo";
 import EnquiryForm from "../../widgets/EnquiryForm";
 import IFrameBanner from "../../widgets/iFrameBanner";
 import ContactBanner from "../../widgets/ContactBanner";
-import InfoCard from "../../widgets/InfoCard";
-import TitleAndMeta from "../../widgets/TitleAndMeta";
-import { Link } from "react-router-dom";
+
 import InfoImageSection from "../../widgets/InfoImageSection";
 import {
   CampusLifeResponseData,
@@ -25,8 +23,6 @@ import {
 import { fetchTourData } from "../../utils/utilityFunctionServices";
 import { TourResPonseData } from "../../services/takeATour";
 import { getFullImageUrl } from "../../services/actualPath";
-
-
 const CampusLife: React.FC = () => {
   const [campusLifeData, setcampusLifeData] =
     useState<CampusLifeResponseData | null>(null);
