@@ -5,7 +5,7 @@ interface Section {
   title: string | null;
   description: string;
 }
-
+//interface
 interface DepartmentCardProps {
   title: string;
   sections: Section[];
