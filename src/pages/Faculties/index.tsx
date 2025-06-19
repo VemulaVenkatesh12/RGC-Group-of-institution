@@ -51,7 +51,7 @@ const FacultyPage: React.FC = () => {
             />
 
             {/* Department Tabs  */}
-            <div className="d-flex justify-content-between align-items-center container px-2 mt-5">
+            <div className="d-flex justify-content-between align-items-center container px-2 mt-5 mb-3">
                 {/* Tab Labels */}
                 <div className="d-flex gap-4">
                     {departmentFaculityData?.departments.map((dept) => (
@@ -80,33 +80,31 @@ const FacultyPage: React.FC = () => {
 
 
             {/* Faculty Cards */}
-            <div className="container-fluid" style={{ marginTop: "20px", paddingLeft: "55px", paddingRight: "55px"
-                
-             }}>
-                {activeDepartment?.department_catagory.map((category: DepartmentCatagory) => (
-                    <div key={category.id} className="px-xxl-5 px-lg-5 px-md-4 px-sm-3 px-2 mb-3">
-                        {/* Category Title */}
-                        <div className="row mb-3">
-                            <div className="col-12 pt-3">
-                                <h5 className="mb-0 text-bold text-danger">{category.department_catagory_name}</h5>
-                            </div>
-                        </div>
 
-                        {/* Faculty Cards */}
-                        <div className="d-flex flex-wrap justify-content-between gap-4">
-                            {category.Faculties_details?.map((faculty) => (
-                                <div key={faculty.id} style={{ flex: "1 0 21%", maxWidth: "23%" }}>
-                                    <LeadershipCard
-                                        title={faculty?.name ?? ""}
-                                        description={faculty?.designation ?? ""}
-                                        cardImg={getFullImageUrl(faculty?.image?.formats?.small?.url || "") || ""}
-                                    />
-                                </div>
-                            ))}
+            {activeDepartment?.department_catagory.map((category: DepartmentCatagory) => (
+                <div key={category.id} className="px-xxl-5 px-lg-5 px-md-4 px-sm-3 px-2 mb-3">
+                    {/* Category Title */}
+                    <div className="row mb-3 ms-5">
+                        <div className="col-12 pt-3">
+                            <h5 className="mb-0 text-bold text-danger">{category.department_catagory_name}</h5>
                         </div>
                     </div>
-                ))}
-            </div>
+
+                    {/* Faculty Cards */}
+                    <div className="d-flex flex-wrap justify-content-start gap-4 ms-5 mb-5">
+                        {category.Faculties_details?.map((faculty) => (
+                            <div key={faculty.id} style={{ flex: "1 0 21%", maxWidth: "23%" }}>
+                                <LeadershipCard
+                                    title={faculty?.name ?? ""}
+                                    description={faculty?.designation ?? ""}
+                                    cardImg={getFullImageUrl(faculty?.image?.formats?.small?.url || "") || ""}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            ))}
+
 
 
             <div>
