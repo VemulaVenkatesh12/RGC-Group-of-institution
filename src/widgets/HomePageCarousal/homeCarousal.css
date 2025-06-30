@@ -8,6 +8,11 @@
         height: 40vh;
     }
 }
+@media (min-width: 1000px) and (max-width: 1199.98px) {
+  .motionCard-bg {
+    height: 50vh;
+  }
+}
 
 .back-blur {
     position: absolute;

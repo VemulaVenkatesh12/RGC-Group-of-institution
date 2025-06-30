@@ -55,7 +55,7 @@ const EngineeringDepartments: React.FC = () => {
                   > 
                     {dept.name}
                     {idx === 0 && (
-                      <span className="text-danger ms-2">&uarr;</span>
+                      <span className="text-danger ms-2 ">&#x2197;</span>
                     )}
                   </Link>
                 </li>
@@ -90,7 +90,7 @@ const EngineeringDepartments: React.FC = () => {
               className="text-decoration-none text-dark fw-semibold"
             >
               Master Of Business Administration (MBA)
-              <span className="text-danger ms-2">&uarr;</span>
+              <span className="text-danger ms-2">&#8599;</span>
             </Link>
           </div>
         </div>
